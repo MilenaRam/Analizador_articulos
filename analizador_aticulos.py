@@ -290,7 +290,7 @@ def main():
         if resultado:
             reporte = comparador.generar_reporte(resultado, archivo1, archivo2)
             print(reporte)
-            guardar = input("\n¿Guardar reporte en archivo? (si/no): ").lower()
+            guardar = input("\n¿Guardar reporte en archivo? (s/n): ").lower()
             if guardar == 's':
                 nombre_reporte = f"reporte_comparacion_{os.path.basename(archivo1)}_vs_{os.path.basename(archivo2)}.txt"
                 with open(nombre_reporte, 'w', encoding='utf-8') as f:
